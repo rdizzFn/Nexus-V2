@@ -1,0 +1,67 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net10.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+
+
+		<PublishSingleFile>true</PublishSingleFile>
+
+
+		<SelfContained>true</SelfContained>
+
+
+		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+
+		<IncludeAllContentForSelfExtract>true</IncludeAllContentForSelfExtract>
+	</PropertyGroup>
+
+	
+
+	<ItemGroup>
+		<None Remove="Sonidos\Inicio.wav" />
+		<None Remove="Sonidos\Inicio2.wav" />
+		<None Remove="Sonidos\DespegueCohete.wav" />
+		<None Remove="Sonidos\MusicaJuego.wav" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="Sonidos\Inicio.wav">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<CopyToPublishDirectory>Always</CopyToPublishDirectory>
+		</Content>
+
+		<Content Include="Sonidos\Inicio2.wav">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<CopyToPublishDirectory>Always</CopyToPublishDirectory>
+		</Content>
+
+		<Content Include="Sonidos\DespegueCohete.wav">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<CopyToPublishDirectory>Always</CopyToPublishDirectory>
+		</Content>
+
+		<Content Include="Sonidos\MusicaJuego.wav">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<CopyToPublishDirectory>Always</CopyToPublishDirectory>
+		</Content>
+	</ItemGroup>
+
+	
+
+	<ItemGroup>
+		<Content Include="frames\**\*.txt">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<CopyToPublishDirectory>Always</CopyToPublishDirectory>
+		</Content>
+	</ItemGroup>
+
+	
+
+	<ItemGroup>
+		<PackageReference Include="System.Windows.Extensions" Version="10.0.12" />
+	</ItemGroup>
+
+</Project>
