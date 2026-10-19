@@ -1,0 +1,12 @@
+public double Estabilidad { get; private set; }
+
+public void AumentarEstabilidad(double cantidad)
+{
+    Estabilidad = Estabilidad + cantidad;
+
+    if (Estabilidad > 100)
+        Estabilidad = 100;
+
+    if (Estabilidad < 0)
+        Estabilidad = 0;
+}
