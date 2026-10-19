@@ -1,0 +1,12 @@
+public void EliminarTipo(TipoObjeto tipo)
+{
+    for (int i = objetos.Count - 1; i >= 0; i--)
+    {
+        if (objetos[i].Tipo == tipo)
+        {
+            objetos.Remove(i);
+        }
+    }
+}
+
+Cuando ejecuto el programa la cantidad de objetos restantes es 1, y el unico objeto es el escudo, esto hizo que elimine todos los objetos del metodo.
