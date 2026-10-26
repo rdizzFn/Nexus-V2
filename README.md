@@ -63,6 +63,14 @@ Al iniciar el programa, se presenta la pantalla de bienvenida y se solicitan los
 
 Desde el menú se pueden realizar acciones como explorar realidades, analizar anomalías, revisar el enlace, recuperar energía, estabilizar la conexión, consultar el inventario y revisar las misiones.
 
-## Propósito académico
+## Documentación
 
-NEXUS permite aplicar
+Los documentos del proyecto se encuentran en la carpeta `docs/` del repositorio.
+
+- `Manual_NEXUS_H3.pdf`: manual técnico del proyecto.
+- `diseno-del-juego.md`: diseño y mecánicas del juego.
+- `arquitectura-actual.md`: organización actual del código.
+- `arquitectura-propuesta.md`: propuesta de organización del sistema.
+- `modelo-de-datos-propuesto.md`: propuesta para guardar el progreso.
+- `analisis-tecnico.md`: análisis de las alternativas técnicas.
+- `evidencias/`: bocetos y diagramas del proyecto.
